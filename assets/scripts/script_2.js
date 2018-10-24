@@ -5,7 +5,7 @@ var obj = document.getElementById(el_id);
 
 var divWidth = obj.offsetWidth;
 
-var margin = {top: 50, right: 0, bottom: 40, left: 0},
+var margin = {top: 30, right: 0, bottom: 20, left: 0},
     width = divWidth,
     height = 500 - margin.top - margin.bottom,
     formatNumber = d3.format(","),
