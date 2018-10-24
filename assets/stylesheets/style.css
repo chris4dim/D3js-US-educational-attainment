@@ -99,7 +99,7 @@ label{
   cursor: pointer;
 }
 
-.radio-toolbar label=mode1 {
+.radio-toolbar label[type="mode1"] {
 
   display: inline-block;
   background-color: #ddd;
