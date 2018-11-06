@@ -78,7 +78,7 @@ label{
 }
 
 .radio-toolbar input[type="radio"] {
-  display:#42c2f4;
+  display:none;
     
 }
 
@@ -86,7 +86,7 @@ label{
 	
     display: inline-block;
     backround-color: #42c2f4;
-    padding: 3px 17px;
+    padding: 3px 7px;
     font-family:"Multi";
     font-size: 11px;
     cursor: pointer;  
