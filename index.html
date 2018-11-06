@@ -18,28 +18,27 @@ var blop4 = new Audio();
 blop4.src = "blop4.mp3";
 </script>  
 
- <header>
+  <header>
 	 
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-	<div class="container-fluid">
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-	<span class="navbar-toggler-icon"></span>
-	</button>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<div class="container-fluid">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+<span class="navbar-toggler-icon"></span>
+</button>
 		
-	<div class="collapse navbar-collapse" id="navbarResponsive">
-	<ul class="navbar-nav ml-auto">
+<div class="collapse navbar-collapse" id="navbarResponsive">
+
+  <ul class="navbar-nav ml-auto">
+<li class="nav-item active"><a class="nav-link" href="#top" onmouseover="blop4.play();" >Top</a></li>
+<li class="nav-item active"><a class="nav-link" href="#national" onmouseover="blop4.play();" >National</a></li>
+<li class="nav-item active"><a class="nav-link" href="#regional" onmouseover="blop4.play();" >Regional</a></li>
+<li class="nav-item active"><a class="nav-link" href="#state" onmouseover="blop4.play();" >State-Level</a></li>
+   <ul>
 	
-	<li class="nav-item active"><a class="nav-link" href="#top" onmouseover="blop4.play();" >Top</a></li>
-	<li class="nav-item active"><a class="nav-link" href="#national" onmouseover="blop4.play();" >National</a></li>
-	<li class="nav-item active"><a class="nav-link" href="#regional" onmouseover="blop4.play();" >Regional</a></li>
-	<li class="nav-item active"><a class="nav-link" href="#state" onmouseover="blop4.play();" >State-Level</a></li>
-	</ul>
-	
-	</div>
-	</div>
-	</nav>
-	 
-	</header>
+</div>
+</div>
+        </nav>
+   </header>
 <body>
 
     <h1 class="title" onmouseover= "responsiveVoice.speak('Educational Attainment in the United States');" onmouseleave="responsiveVoice.cancel();" >Educational Attainment in the United States</h1>
