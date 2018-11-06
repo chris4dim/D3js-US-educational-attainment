@@ -85,6 +85,8 @@ label{
 .radio-toolbar label {
 	
     display: inline-block;
+    border-color: dashed;
+    border-color: black;
     backround-color: #42c2f4;
     padding: 3px 7px;
     font-family:"Multi";
