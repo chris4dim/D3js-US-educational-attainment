@@ -91,8 +91,8 @@ label{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 6px 8px;
+    font-size: 12px;
+    margin: 3px 7px;
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
     cursor: pointer;
@@ -101,7 +101,7 @@ label{
 }
 
 .radio-toolbar label:hover {
-  background-color: #f6c8b3;
+  background-color: #42c2f4;
   color: white; 
 }
 
