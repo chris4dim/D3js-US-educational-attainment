@@ -83,21 +83,14 @@ label{
 }
 
 .radio-toolbar label {
-
- background-color: black; 
-    color: black; 
-    border: 2px outset #f6c8b3;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
+	
+	
     display: inline-block;
-    font-size: 12px;
-    margin: 3px 7px;
-    -webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    cursor: pointer;
-    box-shadow: 0 9px #666;
-    font-weight: bold;
+    backround-color: #42c2f4;
+    padding: 3px 17px;
+    font-family:"Multi";
+    font-size: 11px;
+    cursor: pointer;  
 }
 
 .radio-toolbar label:hover {
@@ -105,17 +98,10 @@ label{
   color: black; 
 }
 
-.radio-toolbar label:active {
-  background-color: #42c2f4;
-  box-shadow: 0 5px #999;
-  transform: translateY(4px);
-}
-
 .radio-toolbar input[type="radio"]:checked+label {
   background-color: #42c2f4;
-  color: black;
+ 
 }
-
 
 
 a, a:visited, a:hover {
