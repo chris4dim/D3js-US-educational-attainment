@@ -29,8 +29,8 @@ blop4.src = "blop4.mp3";
       <ul class="navbar-nav ml-auto">
       <li class="nav-item active"><a class="nav-link" href="#top" onmouseover="blop4.play();" >Top</a></li>
       <li class="nav-item active"><a class="nav-link" href="#national" onmouseover="blop4.play();" onclick="protografima()">National</a></li>
-      <li class="nav-item active"><a class="nav-link" href="#regional" onmouseover="blop4.play();" >Regional</a></li>
-      <li class="nav-item active"><a class="nav-link" href="#state" onmouseover="blop4.play();" >State-Level</a></li>
+      <li class="nav-item active"><a class="nav-link" href="#regional" onmouseover="blop4.play();" onclick="deuterografima()" >Regional</a></li>
+      <li class="nav-item active"><a class="nav-link" href="#state" onmouseover="blop4.play();"  onclick="tritografima()">State-Level</a></li>
     </ul>
 
       </div>
@@ -43,11 +43,11 @@ blop4.src = "blop4.mp3";
     <h1 class="title" onmouseover= "responsiveVoice.speak('Educational Attainment in the United States');" onmouseleave="responsiveVoice.cancel();" >Educational Attainment in the United States</h1>
 		     
 	<p><br></p>
-    <h2 class="subtitle" onmouseover= "responsiveVoice.speak('Nation-Wide Education Level of Population in Schooling');" onmouseleave="responsiveVoice.cancel();" >Nation-Wide Education Level of Population in Schooling</h2>
+    <h2 id="titlosnation" class="subtitle" onmouseover= "responsiveVoice.speak('Nation-Wide Education Level of Population in Schooling');" onmouseleave="responsiveVoice.cancel();" >Nation-Wide Education Level of Population in Schooling</h2>
 	
     <svg id="pie-chart" width="960" height="450"></svg><a name="regional"></a>
     <p><br><br><br></p>
-    <h2 class="subtitle" onmouseover= "responsiveVoice.speak('Educational Attainment: Region-level Breakdown of University Students');"  onmouseleave="responsiveVoice.cancel();" >Educational Attainment: Region-level Breakdown of University Students</h2>
+    <h2 id="titlosregion "class="subtitle" onmouseover= "responsiveVoice.speak('Educational Attainment: Region-level Breakdown of University Students');"  onmouseleave="responsiveVoice.cancel();" >Educational Attainment: Region-level Breakdown of University Students</h2>
 	
     <form id="tree-form">
         <div class="radio-toolbar">
@@ -65,7 +65,7 @@ blop4.src = "blop4.mp3";
     <div id="chart"></div>
 	<a name="state"></a>
     <p><br><br></p>
-    <h2 class="subtitle"  onmouseover= "responsiveVoice.speak('Education Level of Population in Schooling: State-level Breakdown');" onmouseleave="responsiveVoice.cancel();" >Education Level of Population in Schooling: State-level Breakdown</h2>
+    <h2 id="titlosstate" class="subtitle"  onmouseover= "responsiveVoice.speak('Education Level of Population in Schooling: State-level Breakdown');" onmouseleave="responsiveVoice.cancel();" >Education Level of Population in Schooling: State-level Breakdown</h2>
 	
     <form id="stack-form">
         <div class="radio-toolbar">
@@ -80,11 +80,34 @@ blop4.src = "blop4.mp3";
     </div>
 <script>
 	function protografima() {
+	document.getElementById("titlosregion").style.display = "none";
+	document.getElementById("titlosstate").style.display = "none";
 	document.getElementById("tree-form").style.display = "none";
 	document.getElementById("stack-form").style.display = "none";
         document.getElementById("chart").style.display = "none";
 	document.getElementById("stacked-bar-chart").style.display = "none";
 	document.getElementById("pie-chart").style.display = "block";
+	document.getElementById("titlosnation").style.display = "block";
+}
+	function deuterografima() {
+	document.getElementById("titlosregion").style.display = "block";
+	document.getElementById("titlosstate").style.display = "none";
+	document.getElementById("tree-form").style.display = "block";
+	document.getElementById("stack-form").style.display = "none";
+        document.getElementById("chart").style.display = "block";
+	document.getElementById("stacked-bar-chart").style.display = "none";
+	document.getElementById("pie-chart").style.display = "none";
+	document.getElementById("titlosnation").style.display = "none";
+}
+	function tritografima() {
+	document.getElementById("titlosregion").style.display = "none";
+	document.getElementById("titlosstate").style.display = "block";
+	document.getElementById("tree-form").style.display = "none";
+	document.getElementById("stack-form").style.display = "block";
+        document.getElementById("chart").style.display = "none";
+	document.getElementById("stacked-bar-chart").style.display = "block";
+	document.getElementById("pie-chart").style.display = "none";
+	document.getElementById("titlosnation").style.display = "none";
 }
 
 	</script>
