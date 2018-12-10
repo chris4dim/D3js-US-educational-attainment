@@ -28,7 +28,7 @@ blop4.src = "blop4.mp3";
    <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
       <li class="nav-item active"><a class="nav-link" href="#top" onmouseover="blop4.play();" >Top</a></li>
-      <li class="nav-item active"><a class="nav-link" href="#national" onmouseover="blop4.play();" >National</a></li>
+      <li class="nav-item active"><a class="nav-link" href="#national" onmouseover="blop4.play();" onclick="protografima()">National</a></li>
       <li class="nav-item active"><a class="nav-link" href="#regional" onmouseover="blop4.play();" >Regional</a></li>
       <li class="nav-item active"><a class="nav-link" href="#state" onmouseover="blop4.play();" >State-Level</a></li>
     </ul>
@@ -78,7 +78,16 @@ blop4.src = "blop4.mp3";
     <div>
         <svg id="stacked-bar-chart"></svg>
     </div>
+<script>
+	function protografima() {
+	document.getElementById("tree-form").style.display = "none";
+	document.getElementById("stack-form").style.display = "none";
+        document.getElementById("chart").style.display = "none";
+	document.getElementById("stacked-bar-chart").style.display = "none";
+	document.getElementById("pie-chart").style.display = "block";
+}
 
+	</script>
     
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
